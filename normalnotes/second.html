@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+
+<body>
+    <section id="aboutus-notes">
+        <div class="container about-container">
+            <h2 class="section-heading">All Second year is here</h2>
+            <p>syllabus,notes and all previous year papers</p>
+        </div>
+    </section>
+
+    <section id="main-notes">
+
+
+
+        <div class="container flex drop-container">
+
+            <div class="dropdown">
+                <button class="dropbtn primary-btn small-bold-text"
+                    onclick="toggleDropdown('syllabus')">Syllabus</button>
+                <div style="display: block;" class="dropdown-content container" id="syllabusDropdown">
+                   <div class="container">
+                       
+                       <h2>Syllabus</h2>
+                        <a href="#" class="secondary-btn syllabus-btn small-bold-text">
+                            Download Syllabus
+                        </a>
+                   </div> 
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn primary-btn small-bold-text" onclick="toggleDropdown('notes')">Notes</button>
+                <div class=" container dropdown-content " id="notesDropdown">
+
+                    <h2>All Notes</h2>
+
+                    <div class="flex sub-container">
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('physics')"><i class="fa-solid fa-bolt icon-1"></i><span>Physics</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="physicsDropdown" class="courses_d ">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('maths')"><i class="fa-solid fa-bolt icon-1"></i><span>maths</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="mathsDropdown" class="courses_2">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+                        <div class="dropdown_list subdrop">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('graphics')"><i class="fa-solid fa-bolt icon-1"></i><span>graphics</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="graphicsDropdown" class="courses_d ">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_list ">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('eee')"><i class="fa-solid fa-bolt icon-1"></i><span>eee</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="eeeDropdown" class="courses_2">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('chemistry')"><i class="fa-solid fa-bolt icon-1"></i><span>chemistry</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="chemistryDropdown" class="courses_d ">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('mechanics')"><i class="fa-solid fa-bolt icon-1"></i><span>mechanics</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="mechanicsDropdown" class="courses_2">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+                    </div>
+
+                        
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn primary-btn small-bold-text" onclick="toggleDropdown('question-papers')">Question
+                    Papers</button>
+                <div class="container dropdown-content" id="question-papersDropdown">
+                    <h2>Question Papers</h2>
+                    <div class="flex sub-container">
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('qsphysics')"><i class="fa-solid fa-bolt icon-1"></i><span>Physics</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="qsphysicsDropdown" class="courses_d ">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('qsmaths')"><i class="fa-solid fa-bolt icon-1"></i><span>maths</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="qsmathsDropdown" class="courses_2">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+                        <div class="dropdown_list subdrop">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('qsgraphics')"><i class="fa-solid fa-bolt icon-1"></i><span>graphics</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="qsgraphicsDropdown" class="courses_d ">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_list ">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('qseee')"><i class="fa-solid fa-bolt icon-1"></i><span>eee</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="qseeeDropdown" class="courses_2">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('qschemistry')"><i class="fa-solid fa-bolt icon-1"></i><span>chemistry</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="qschemistryDropdown" class="courses_d ">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_list">
+                            <button class="dropdown_button secondary-btn "
+                                onclick="toggleDropdown1('qsmechanics')"><i class="fa-solid fa-bolt icon-1"></i><span>mechanics</span><i class="fa-solid fa-caret-down icon-2"></i>
+                            </button>
+                 
+                            <div  id="qsmechanicsDropdown" class="courses_2">
+                                <li><a href="">Machine learning</a></li>
+                                <li><a href="">Data science</a></li>
+                                <li><a href="">Data analysis</a></li>
+                                <li><a href="">Data mining</a></li>
+                                <li><a href="">Data warehousing</a></li>
+                            </div>
+                        </div>
+
+                    </div>
+
+                        
+
+                </div>
+                    
+        </div>
+    </section>
+
+    <script
+    src="https://kit.fontawesome.com/f0888c81d1.js"
+    crossorigin="anonymous">
+   </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
